@@ -1,0 +1,35 @@
+@import "./main-progress.css";
+
+.progress { 
+    font: var(--desktop-body2bold);
+    color: var(--white); 
+    text-align: center;
+    cursor: pointer;
+}
+
+.progress-bar {
+    block-size: 2px;
+    background: #c4c4c4;
+}
+
+.progress-advance {
+    block-size: 100%;
+    inline-size: 0%;
+    background: var(--gradient);
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    inline-size: 100%;
+}
+
+@media screen and (min-width:768px) {
+    
+    .progress-container {        
+        flex-direction: row;
+        inline-size: auto;
+    }
+}
+

@@ -1,0 +1,17 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+
+@media screen and (min-width:1024px) {
+    .footer { 
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        padding-inline-start: 3rem;
+        padding-inline-end: 3rem; 
+    }
+}

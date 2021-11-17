@@ -1,0 +1,11 @@
+.main-bottom-hero {
+    background: linear-gradient(180deg, #3442A8 0%, #0E0C20 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block-start: 4rem;
+    padding-block-end: 8rem; 
+ 
+}

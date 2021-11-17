@@ -1,0 +1,83 @@
+.h1 {
+    color: var(--white);
+    font: var(--mobile-h1);
+}
+
+.h2 {
+    color: var(--white);
+    font: var(--mobile-h2);
+}
+
+.h3{
+    color: var(--white);
+    font: var(--mobile-h3);
+}
+
+.h4{
+    color: var(--white);
+    font: var(--mobile-body2semibold);
+}
+
+.font--iswhite {
+    color: var(--white);
+}
+
+.font--isgray {
+    color: var(--grey);
+}
+
+.font-body1--semibold{
+    font: var(--mobile-body1semibold);
+}
+
+.font-body1--regular{
+    font: var(--mobile-body1regular);
+}
+
+.font-body2--semibold{
+    font: var(--mobile-body2semibold);
+}
+
+.font-body2--regular{
+    font: var(--mobile-body2regular);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .h1 {
+        color: var(--white);
+        font: var(--desktop-h1);
+    }
+    
+    .h2 {
+        color: var(--white);
+        font: var(--desktop-h2);
+    }
+    
+    .h3{
+        color: var(--white);
+        font: var(--desktop-h3);
+    }
+
+    .h4{
+        color: var(--white);
+        font: var(--desktop-h4);
+    }
+    
+        
+    .font-body1--semibold{
+        font: var(--desktop-body1semibold);
+    }
+    
+    .font-body1--regular{
+        font: var(--desktop-body1regular);
+    }
+    
+    .font-body2--semibold{
+        font: var(--desktop-body2semibold);
+    }
+    
+    .font-body2--regular{
+        font: var(--desktop-body2regular);
+    }
+}

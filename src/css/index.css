@@ -1,0 +1,83 @@
+@import "./button.css";
+@import "./logo.css";
+@import "./rainbow.css";
+@import "./font.css";
+@import "./column.css";
+@import "./hamburger.css";
+@import "./transform.css";
+@import "./tools.css";
+@import "./progress.css";
+@import "./QA.css";
+@import "./menu.css";
+@import "./cards.css";
+@import "./wrapper.css";
+@import "./banner.css";
+@import "./showcase.css";
+@import "./template.css";
+@import "./specs.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./benefits.css";
+@import "./advice.css";
+
+
+:root {
+    --black: #212529; 
+    --subtitles: #425466; 
+    --bg: #0e0c20; 
+    --secondarybuttons: #0a2540; 
+    --white: #ffffff; 
+    --purple: #635cff; 
+    --grey: #f6f9fc; 
+    --blue: #32a7ec; 
+    --dark-blue: #092540; 
+    --gradient: linear-gradient(90deg, #bf9079 3.33%, #c8717a 28.4%, #b92ec1 46.32%, #2b51ea 67.28%, #3480b8 83.94%); 
+    --grey: #b6b6bc; 
+    --green: #8bde61; 
+    --pink: #d424e6; 
+    --red: #f71058; 
+    --orange: #e1585f; 
+    --desktop-category: 600 3.75rem/3.75rem Inter; 
+    --desktop-h1: 600 3.375rem/4.050000190734863rem Inter; 
+    --desktop-h2: 600 2.75rem/3.299999952316284rem Inter; 
+    --desktop-h3: 600 2.5rem/3rem Inter; 
+    --desktop-h4: 600 1.875rem/2.25rem Inter; 
+    --desktop-body1regular: 400 1.25rem/1.6875rem Inter; 
+    --desktop-body1semibold: 600 1.25rem/1.6875rem Inter; 
+    --desktop-body2regular: 400 0.9375rem/1.5750000476837158rem Inter; 
+    --desktop-body2bold: 600 0.9375rem/1.5750000476837158rem Inter; 
+    --desktop-buttons: 600 0.8125rem/1.25rem "Open Sans"; 
+    --mobile-category: 600 2rem/3.359999895095825rem Inter; 
+    --mobile-h1: 600 2.25rem/3.7799999713897705rem Inter; 
+    --mobile-h2: 600 1.75rem/2.940000057220459rem Inter; 
+    --mobile-h3: 600 1.5rem/2.5199999809265137rem Inter; 
+    --mobile-body1regular: 400 0.9375rem/1.5750000476837158rem Inter; 
+    --mobile-body1semibold: 600 0.9375rem/1.5750000476837158rem Inter; 
+    --mobile-body2regular: 400 0.8125rem/1.3650000095367432rem Inter; 
+    --mobile-body2semibold: 600 0.8125rem/1.3650000095367432rem Inter; 
+    --mobile-button: 600 0.8125rem/1.25rem "Open Sans"; 
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--bg);
+}
+
+section {
+    padding-block-end: 4rem; 
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem; 
+    box-sizing: border-box;  
+}
+
+@media screen and (min-width:1024px) {
+ 
+    section {
+        padding-block-end: 8rem;
+        padding-inline-start: 3rem;
+        padding-inline-end: 3rem;  
+    }
+
+}

@@ -1,0 +1,82 @@
+.main-progress .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+}
+
+.main-progress .h3 {
+    text-align: center;
+}
+
+.progress-bg {
+    inline-size: 19.5rem;
+    block-size: 10.9375rem;
+    margin: 0;
+    position: relative;
+}
+
+.progress-img {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    opacity: 1;
+    transition: opacity ease-in-out 1s;
+    vertical-align: middle;
+    aspect-ratio: 16/9;
+}
+
+.progress-showcase {
+    opacity: 1;
+    inline-size: 19.5rem;
+    block-size: 10.9375rem; 
+}
+
+
+.progress-img:is(.progress-img-fadeOff),
+.progress-showcase:is(.progress-img-fadeOff) {
+    opacity: 0;
+}
+
+.progress-showcase { 
+    position: relative;
+}
+
+.progress-showcase .progress-transform-after,
+.progress-showcase .progress-transform-before {
+    position: absolute;   
+    vertical-align: middle;
+}
+
+.progress-showcase .progress-transform-before{
+    filter: brightness(.8);
+}
+
+.progress-showcase .progress-transform-after {
+    clip-path: polygon(80% 100%, 100% 100%, 100% 0, 80% 0);
+}
+
+@media screen and (min-width:768px) {
+    .progress-bg,
+    .progress-showcase {
+        inline-size: 40rem;
+        block-size: 20.9375rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .progress-bg,
+    .progress-showcase {
+        inline-size: 60rem;
+        block-size: 30.9375rem;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .progress-bg,
+    .progress-showcase {
+        inline-size: 74.125rem;
+        block-size: 41.75rem;
+    }
+}

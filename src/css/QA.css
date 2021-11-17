@@ -1,0 +1,12 @@
+@import "./qa-container.css";
+
+.QA-header{
+    outline-color: #635cff; 
+    font: var(--desktop-body2bold);
+    color: var(--white);
+}
+
+.QA-content {
+    font: var(--desktop-body2regular);
+    color: var(--grey);
+}

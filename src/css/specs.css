@@ -1,0 +1,31 @@
+.specs{
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    column-gap: 5rem;
+}
+
+.specs-title {
+    font: var(--mobile-body2semibold);
+    color: var(--white); 
+}
+
+.specs-text{
+    color: var(--grey);
+    font: var(--mobile-body2regular);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .specs{ 
+        grid-template-columns: 7rem 1fr;
+        column-gap: 1.5rem;
+    }
+    
+    .specs-title { 
+        font: var(--desktop-body2bold);
+    }
+
+    .specs-text{ 
+        font: var(--desktop-body2regular);
+    }
+}

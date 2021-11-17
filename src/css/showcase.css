@@ -1,0 +1,144 @@
+.showcase {
+    position: relative; 
+    inline-size: 19.625rem;
+    block-size: 11.649375rem;
+    margin: auto;
+}
+
+.showcase-container { 
+    position: absolute;
+    inline-size: inherit;
+    block-size: inherit;
+}
+
+.showcase-img {
+    vertical-align: middle;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.showcase-tranform {
+    position: absolute;
+    inline-size: 14rem;
+    block-size: 9.5rem;
+    inset-block-start: 1.5rem; 
+}
+
+.showcase-examples { 
+    inline-size: inherit;
+    block-size: inherit;
+    position: relative;
+}
+
+.showcase-after { 
+    position: absolute;
+    inline-size: inherit;
+    block-size: inherit;
+    background-image: url(../img/icons/showcase-after.png);
+    background-size: cover;
+    clip-path: polygon(50% 100%, 100% 100%, 100% 0, 50% 0);
+}
+
+.showcase-before{ 
+    position: absolute;
+    inline-size: inherit;
+    block-size: inherit;
+    background-image: url(../img/icons/showcase-before.png);
+    background-size: cover;
+}
+
+.showcase-marker {
+    inline-size: 1px;
+    block-size: 100%;
+    position: absolute;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.897), transparent  ); 
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+}
+
+
+.showcase-marker::before{
+    content: "BEFORE";
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: .5rem;
+    color: var(--white);
+    font-size: 0.5rem;
+    font-family: Inter;
+    transform: translateX(-.5rem);
+}
+
+.showcase-marker::after{
+    content: "AFTER";
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: .5rem;
+    color: var(--white);
+    font-size: 0.5rem;
+    font-family: Inter;
+    transform: translateX(.5rem);
+}
+
+@media screen and (min-width:708px) {
+    .showcase {
+        inline-size: 40.125rem;
+        block-size: 24rem;
+    }
+
+    .showcase-tranform {
+        inline-size: 28.5625rem;
+        block-size: 17.06125rem;
+        inset-block-start: 4rem;
+    }
+
+    .showcase-marker::before{
+        font-size: 1rem;
+    }
+    
+    .showcase-marker::after{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .showcase {
+        inline-size: 64rem;
+        block-size: 38rem;
+    }
+
+    .showcase-tranform {
+        inline-size: 45.5625rem;
+        block-size: 30.06125rem;
+        inset-block-start: 6rem;
+    }
+
+    .showcase-marker::before{
+        font-size: 1rem;
+    }
+    
+    .showcase-marker::after{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .showcase {
+        inline-size: 74.125rem;
+        block-size: 44rem;
+    }
+
+    .showcase-tranform {
+        inline-size: 52.5625rem;
+        block-size: 35.06125rem;
+        inset-block-start: 6rem;
+    }
+
+    .showcase-marker::before{
+        font-size: 1rem;
+    }
+    
+    .showcase-marker::after{
+        font-size: 1rem;
+    }
+}

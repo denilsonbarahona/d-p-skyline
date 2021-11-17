@@ -1,0 +1,47 @@
+.banner {
+    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.329)), url(../img/backgrounds/footer/Lights.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    position: sticky;
+    inset-block-end: 0;
+}
+
+.banner .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.banner-header {
+    margin: 0;
+    font: var(--mobile-h2);
+    color: var(--white);
+}
+
+.banner-promo>* {
+    margin: 0;
+}
+
+.banner-h3 {
+    font: var(--mobile-h3);
+    color: var(--white);
+}
+
+.banner .button {
+    inline-size: 10.375rem;
+}
+
+.banner-gold{
+    color: #D4AC0D;
+}
+
+
+@media screen and (min-width:1440px) {
+    .banner {
+        display: block;
+    }
+}

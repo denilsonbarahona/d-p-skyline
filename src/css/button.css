@@ -1,0 +1,52 @@
+.button {
+    border: 1px solid transparent;
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; 
+    background: none;
+    font: var(--desktop-buttons);
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: .5rem;
+    justify-content: center;
+    inline-size: 100%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    outline-color: #635cff; 
+}
+
+ 
+
+.button:active {
+    transform: scale(.95);
+}
+
+.button--bordered{
+    border: 1px solid var(--white);
+}
+
+.button--primary{
+    background: var(--gradient);
+}
+
+.button--iswhite {
+    background-color: var(--white);
+    color: var(--black); 
+}
+
+.button--iconic {
+    display: flex;
+    gap: .25rem;
+}
+
+.button-icon { 
+    vertical-align: middle;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    display: flex; 
+}
+
+
+ 

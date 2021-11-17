@@ -1,0 +1,35 @@
+.transform {
+    inline-size: 12.5rem;
+    block-size: 9.9375rem;  
+    position: relative;    
+}
+
+.transform-before {
+    position: absolute; 
+    inline-size: 100%;
+    block-size: inherit;
+    object-fit: cover;
+    inset-inline-start: 0; 
+    animation: clip ease-in-out 2s infinite; 
+}
+
+
+.transform-after {
+    margin: 0;
+    inset-inline-start: 0;
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover; 
+}
+
+
+@keyframes clip {
+    0%{
+        clip-path: polygon(0% 100%, 100% 100%, 100% 0, 0% 0);
+    }
+    
+    100% {
+        clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);        
+    }
+}

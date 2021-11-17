@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is an clon of the web page https://skylum.com/" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favico/favicon-16x16.png">
+    <link rel="manifest" href="./src/img/favico/site.webmanifest">
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <title>skyline</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="hamburger-button" role="button" title="show options in menu">
+                <div class="hambuger-line"></div>
+                <div class="hambuger-line"></div>
+                <div class="hambuger-line"></div>
+            </div>
+            
+            <a href="#" aria-current="page" class="logo">
+                <img class="logo-img" alt="skyline's main logo" width="157" height="40" src="./src/img/icons/logo.png" />
+            </a>
+    
+            <nav class="menu" aria-label="skyline's main menu">
+                <ul class="menu-list">
+                    <li class="menu-item menu--elevation"><a href="#" tabindex="0">Lumiar</a></li>
+                    <li class="menu-item"><a href="#" tabindex="0">Membership</a></li> 
+                    <li class="menu-item menu--submenu" tabindex="0"> 
+                        <a  href="#" aria-label="click to show more options">Marketplace</a>
+                        <ul class="submenu submenu--isHidden">
+                            <li class="submenu-item"><a href="#" tabindex="0">Skies</a></li>
+                            <li class="submenu-item"><a href="#" tabindex="0">Templates</a></li>
+                            <li class="submenu-item"><a href="#" tabindex="0">E-Books</a></li>
+                            <li class="submenu-item"><a href="#" tabindex="0">LUTs</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#" tabindex="0">Explore</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <div class="hero">
+        <div class="wrapper">
+            <div>
+                <h1 class="hero-header h1">Photo editing with <span class="rainbow">IA</span>.</h1>
+                <h1 class="hero-header h1">Amazing. Faster.</h1>
+            </div>
+        
+            <div class="hero-action">
+                <button title="buy now" class="button button--bordered">BUY NOW</button>
+                <button title="download" class="button button--primary">DOWNLOAD</button>
+            </div>
+
+            <div class="hero-description">
+                <p class="hero-bold font--iswhite">MacOS and Windows application</p>
+                <p class="hero-regular font--isgray">and complement for</p>
+                <div class="hero-icon">
+                    <img src="./src/img/icons/photoshop.png" width="24" height="24" alt="adobe photoshop" aria-label="adobe photoshop" title="adobe photoshop">
+                    <img src="./src/img/icons/ligthroom.png" width="24" height="24" alt="adobe ligthroom" aria-label="adobe ligthroom" title="adobe ligthroom">
+                </div>
+            </div>
+
+            <div class="showcase">
+                <div class="showcase-container">
+                    <img src="./src/img/icons/scheme.png" width="1186" height="704" alt="app's showcase" class="showcase-img">
+                </div>
+                <div class="showcase-tranform">
+                    <div class="showcase-examples" id="hero-showcase">
+                        <div class="showcase-before"></div>
+                        <div class="showcase-after"></div>
+                    </div>
+                    <div class="showcase-marker"></div>
+                </div>
+            </div>
+
+            <div class="hero-update">
+                <div class="hero-blur"></div>                
+                <p class="hero-update-text" tabindex="0">LuminarAI Update 2 The sky is no longer the limit!</p>
+                <button title="" class="button button--iswhite button--iconic">
+                    MORE
+                    <img alt="button icon" class="button-icon" height="20" width="20" src="./src/img/icons/arrow-down.svg" aria-hidden="true">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="main-benefits">
+            <div class="wrapper">
+                <div class="benefits">
+                    <div class="benefits-col1">
+                        <div href="#" aria-current="page" class="logo">
+                            <img class="logo-img" alt="skyline's logo" width="157" height="40" src="./src/img/icons/logo.png" />
+                        </div>
+                        <h2 class="h2" tabindex="0">The first editor completely powered by <span class="rainbow">artificial intelligence.</span></h2>
+                        
+                        <div class="benefits-task">
+                            <div class="benefits-img">
+                                <img src="./src/img/icons/pics.png" width="40" height="40" alt="more's picture" aria-hidden="false">
+                            </div>
+                            <div class="benefits-text" tabindex="0">
+                                <h3 class="benefits-header">More possibilities.</h3>
+                                <p class="benefits-content">Innovative technologies give a new world of possibilities to express your ideas.</p>
+                            </div>
+                        </div>
+                        <div class="benefits-task">
+                            <div class="benefits-img">
+                                <img src="./src/img/icons/speed.png" width="40" height="40" alt="more's picture" aria-hidden="false">
+                            </div>
+                            <div class="benefits-text" tabindex="0">
+                                <h3 class="benefits-header">Less routine.</h3>
+                                <p class="benefits-content">The AI ​​takes care of boring tasks so you can focus on your creative story.</p>
+                            </div>
+                        </div>
+                        <div class="benefits-task">
+                            <div class="benefits-img">
+                                <img src="./src/img/icons/settings.png" width="40" height="40" alt="more's picture" aria-hidden="false">
+                            </div>
+                            <div class="benefits-text" tabindex="0">
+                                <h3 class="benefits-header">No learning barriers.</h3>
+                                <p class="benefits-content">Whether you've been a photographer for 20 years or 20 seconds, you'll get incredible results right from the start.</p>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                    <div class="benefits-col2">
+                        <figure class="benefits-showcase">
+                            <img src="./src/img/icons/gallery.png" width="360" height="578" alt="gallery image">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-template">
+            <div class="wrapper">
+                <h2 class="h2" tabindex="0">The fastest way to take amazing photos</h2>
+              
+                <div class="template-container">
+                    <div class="template-col1">
+                        <div class="template">
+                            <div class="template-col">
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/dawn.webp" alt="Dawn card template example">
+                                    <figcaption class="card-title h3">DAWN</figcaption>
+                                </figure>
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/sky.webp" alt="Skies card template example">
+                                    <figcaption class="card-title h3">SKIES</figcaption>
+                                </figure>
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/influencer.webp" alt="Influencer card template example">
+                                    <figcaption class="card-title h3">INFLUENCER</figcaption>
+                                </figure>
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/object.webp" alt="Object card template example">
+                                    <figcaption class="card-title h3">OBJECT</figcaption>
+                                </figure>
+                            </div>
+                            <div class="template-col">            
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/essence.webp" alt="Essence card template example">
+                                    <figcaption class="card-title h3">ESSENCE</figcaption>
+                                </figure>
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/cloudy.webp" alt="Cloudy card template example">
+                                    <figcaption class="card-title h3">CLOUDY</figcaption>
+                                </figure>
+                                <figure tabindex="0" class="card">
+                                    <img class="card-img" src="./src/img/icons/plane.webp" alt="Foreground card template example">
+                                    <figcaption class="card-title h3">FOREGROUND</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-col2">
+                        <h3 class="h4 template-text1" tabindex="0">Meet the Templates with <span class="rainbow">AI assistance.</span></h3>
+                        <h3 class="h4 template-text2" tabindex="0">La IA sugiere las plantillas perfectas para cada imagen.</h3>
+                        <h3 class="h4 template-text3" tabindex="0">So you don't need to spend hours choosing.</h3>
+                        <button title="" class="button button--iswhite">SEE TEMPLATES IN ACTION</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-progress">
+            <div class="wrapper">
+                <h3 class="h3">A perfect style in 12 seconds</h3>
+                <figure class="progress-bg">
+                    <img id="progress-one-dark" class="progress-img" width="312" height="175" src="./src/img/showcases/slider-templates-sl2-2-1.png" alt="screen shot">
+                    <img id="progress-one-brigth" class="progress-img progress-img-fadeOff" width="312" height="175" src="./src/img/showcases/slider-templates-sl2-1.png" alt="screen shot">
+                    <img id="progress-one-collage" class="progress-img progress-img-fadeOff" width="312" height="175" src="./src/img/showcases/slider-templates-sl3-2.webp" alt="screen shot">
+                    <div class="progress-showcase progress-img-fadeOff" id="progress-one-showcase" >                           
+                            <img id="progress-one-crop2" class="progress-img progress-transform-before" width="312" height="175" src="./src/img/showcases/slider-templates-sl3-11.webp" alt="screen shot">
+                            <img id="progress-one-crop1" class="progress-img progress-transform-after" width="312" height="175" src="./src/img/showcases/slider-templates-sl3-2.webp" alt="screen shot">
+                    </div>
+                </figure> 
+                <div class="progress-container" id="progress-one-container">
+                    <div class="progress" data-index="0">
+                        <p class="progress-title">The image is analyzed</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance progress-one"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="1">
+                        <p class="progress-title">Templates are suggested</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance progress-one"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="2">
+                        <p class="progress-title">Applies to a series</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance progress-one"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="3">
+                        <p class="progress-title">Get a unified look</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance progress-one"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-advice">
+            <div class="wrapper">
+                <div class="advice">
+                    <figure class="advice-bg">
+                        <img class="advice-img" src="./src/img/icons/bg-card.png" width="312" height="380" alt="">
+                    </figure>
+                    <div class="advice-content">
+                        <p class="font-body1--regular font--isgray" tabindex="0">Mixed quality images or from different devices?</p>
+                        <p class="font-body1--regular font--isgray" tabindex="0">Don't worry - <span class="font-body1--semibold font--iswhite">Templates adapt.</span></p>
+                        <p class="font-body1--regular font--isgray" tabindex="0">After applying a LuminarAI template, all those images will look like they were taken during a photoshoot.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-progress">
+            <div class="wrapper">
+                <h3 class="h3">Traveled 100 miles but had bad weather?</h3>
+                <figure class="progress-bg">
+                    <img id="progress-two-dark" class="progress-img" width="312" height="175" src="./src/img/showcases/slider-templates-sl4-1.png" alt="screen shot">
+                    <img id="progress-two-brigth" class="progress-img progress-img-fadeOff" width="312" height="175" src="./src/img/showcases/slider-templates-sl4-2.png" alt="screen shot">
+                    <img id="progress-two-collage" class="progress-img progress-img-fadeOff" width="312" height="175" src="./src/img/showcases/slider-templates-sl4-3.png" alt="screen shot">
+                    <div class="progress-showcase progress-img-fadeOff" id="progress-two-showcase">                           
+                        <img id="progress-two-crop2" class="progress-img progress-transform-before" width="312" height="175" src="./src/img/showcases/slider-templates-sl4-4a.webp" alt="screen shot">
+                        <img id="progress-two-crop1" class="progress-img progress-transform-after" width="312" height="175" src="./src/img/showcases/slider-templates-sl4-4b.webp" alt="screen shot">
+                    </div>
+                </figure>
+                <div class="progress-container" id="progress-two-container">
+                    <div class="progress" data-index="0">
+                        <p class="progress-title">Highlight the details</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="1">
+                        <p class="progress-title">Change the sky</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="2">
+                        <p class="progress-title">Add Atmosphere</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance"></div>
+                        </div>
+                    </div>
+                    <div class="progress" data-index="3">
+                        <p class="progress-title">Perfect scenery</p>
+                        <div class="progress-bar">
+                            <div class="progress-advance"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-tools">
+            <div class="wrapper">
+                <div class="tools-grid">
+                    <div class="tools" >
+                        <p class="tools-container tools--green"> Body </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/body-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/body-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--blue"> Iris </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/irisb.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/iris.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--pink"> Face </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/faceb.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/facea.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--red"> Skin </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-skin-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-skin-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--red"> Accent </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-accent-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-accent-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--green"> Bokeh </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-bokeh-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-bokeh-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--pink"> Atmosphere </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-atmosphere-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-atmosphere-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--orange"> Structure </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-structure-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-structure-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools" >
+                        <p class="tools-container  tools--red"> Sky </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-sky-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-sky-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="tools" >
+                        <p class="tools-container  tools--green"> Composition </p>
+                        <div class="tool-showcase">
+                            <div class="transform ">
+                                <img class="transform-after" width="200" height="159" src="./src/img/backgrounds/body/tools-composition-after.webp" alt="screen shot">
+                                <img class="transform-before" width="200" height="159" src="./src/img/backgrounds/body/tools-composition-before.webp" alt="screen shot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="main-bottom-hero">
+            <div class="wrapper">
+                <div class="bottom-hero">
+                    <figure class="bottom-hero-figure">
+                        <img class="bottom-hero-img" src="./src/img/icons/lumiar.png" width="80" height="80" alt="">
+                    </figure>
+                    <h3 class="h3">LuminarAI Start your experience</h3>
+                    <p class="font-body2--regular font--isgray">An application and extension. For macOS and Windows.</p>
+                    <div class="hero-action">
+                        <button title="" class="button button--bordered">BUY NOW</button>
+                        <button title="" class="button button--primary">DOWNLOAD</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-QA">
+            <div class="wrapper">
+                <div class="qa-container">
+                    <div class="qa-actions">
+                        <h3 class="h3">Frequent questions</h3>
+                        <button class="button button--bordered">READ THE FULL GUIDE</button>
+                    </div>
+                    
+                    <div class="QA">
+                        <details open>
+                            <summary class="QA-header">
+                                Does LuminarAI process RAW files?
+                            </summary>
+                            <p tabindex="0" class="QA-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga laborum quisquam nulla qui sit officia molestiae illo nostrum quaerat at animi officiis nesciunt rem ullam, eveniet quam voluptate maxime?</p>
+                        </details>
+                        <details>
+                            <summary class="QA-header">
+                                Does LuminarAI process RAW files?
+                            </summary>
+                            <p tabindex="0" class="QA-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga laborum quisquam nulla qui sit officia molestiae illo nostrum quaerat at animi officiis nesciunt rem ullam, eveniet quam voluptate maxime?</p>
+                        </details>
+                        <details>
+                            <summary class="QA-header">
+                                Does LuminarAI process RAW files?
+                            </summary>
+                            <p tabindex="0" class="QA-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga laborum quisquam nulla qui sit officia molestiae illo nostrum quaerat at animi officiis nesciunt rem ullam, eveniet quam voluptate maxime?</p>
+                        </details>
+                        <details>
+                            <summary class="QA-header">
+                                Does LuminarAI process RAW files?
+                            </summary>
+                            <p tabindex="0" class="QA-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga laborum quisquam nulla qui sit officia molestiae illo nostrum quaerat at animi officiis nesciunt rem ullam, eveniet quam voluptate maxime?</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="tag-colum">
+            <div class="tag-so">
+                <div class="tag-img-container">
+                    <img src="./src/img/icons/apple.png" alt="apple's logo" width="20" height="24" class="tag-img">
+                </div>
+                <p class="tag-name font--iswhite font-body1--semibold">macOS</p>
+            </div>
+            <div class="tag-divider"></div>
+            <div class="specs">
+                <p class="specs-title">Mac Model</p>
+                <p class="specs-text">MacBook, MacBook Air, MacBook Pro, iMac, iMac Pro, Mac Pro, Mac mini, early 2010 or newer</p>
+                <p class="specs-title">Processor</p>
+                <p class="specs-text">Intel® Core ™ i5 CPU or better</p>
+                <p class="specs-title">OS versión</p>
+                <p class="specs-text">macOS - 10.13.6 or higher.</p>
+                <p class="specs-title">RAM</p>
+                <p class="specs-text">8 GB RAM or higher (16+ GB RAM recommended)</p>
+                <p class="specs-title">Disc space</p>
+                <p class="specs-text">10 GB of free disk space; SSD for better performance</p>
+                <p class="specs-title">Screen</p>
+                <p class="specs-text">1280x768 or higher resolution</p>
+            </div>
+        </div>
+    
+        <div class="tag-colum">
+            <div class="tag-so">
+                <div class="tag-img-container">
+                    <img src="./src/img/icons/window.png" alt="apple's logo" width="20" height="24" class="tag-img">
+                </div>
+                <p class="tag-name font--iswhite font-body1--semibold">Windows</p>
+            </div>
+            <div class="tag-divider"></div>
+            <div class="specs">
+                <p class="specs-title">Hardware</p>
+                <p class="specs-text">Windows-based hardware PC with mouse or similar input device</p>
+                <p class="specs-title">Processor</p>
+                <p class="specs-text">Intel® Core ™ i5 CPU or better</p>
+                <p class="specs-title">OS versión</p>
+                <p class="specs-text">macOS - 10.13.6 or higher.</p>
+                <p class="specs-title">RAM</p>
+                <p class="specs-text">8 GB RAM or higher (16+ GB RAM recommended)</p>
+                <p class="specs-title">Disc space</p>
+                <p class="specs-text">10 GB of free disk space; SSD for better performance</p>
+                <p class="specs-title">Screen</p>
+                <p class="specs-text">1280x768 or higher resolution</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="banner" >
+        <div class="wrapper">
+            <div class="banner-promo">
+                <p class="banner-h3">Lumiar <span class="banner-gold">NEO</span></p>
+                <p class="font--iswhite font-body2--regular">Coming this winter</p>
+            </div>
+            <h2 class="banner-header">Discover the new way of photo editing</h2>
+            <div class="button button--iswhite">KNOW MORE</div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/script/index.js"></script>
+</body>
+</html>

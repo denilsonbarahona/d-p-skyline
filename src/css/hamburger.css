@@ -1,0 +1,40 @@
+.hamburger-button { 
+    cursor: pointer;
+    inline-size: 1.25rem;
+    block-size: 1.25rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+}
+
+.hambuger-line {
+    inline-size: 100%;
+    block-size: 2px;
+
+    transform: rotate(0deg);
+    background-color: var(--white); 
+    transition: all ease-in-out .4s;
+}
+
+
+.hamburger-button:is(:active, .hamburger-button--isOpen) 
+.hambuger-line:nth-of-type(1){  
+    transform: rotate(45deg) translateY(3px) translateX(3px);
+}
+
+.hamburger-button:is(:active, .hamburger-button--isOpen) 
+.hambuger-line:nth-of-type(2){
+    display: none;
+}
+
+.hamburger-button:is(:active, .hamburger-button--isOpen) 
+.hambuger-line:nth-of-type(3){    
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+}
+
+
+@media screen and (min-width:1024px) {
+    .hamburger-button{
+        display: none;
+    }
+}

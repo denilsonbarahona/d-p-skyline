@@ -1,0 +1,156 @@
+@import "./bottom-hero.css";
+
+.hero {
+    margin-block-start: 1.5rem;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
+}
+
+.hero-header{
+    text-align: center;
+    margin: 0;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem; 
+}
+
+.hero-action {    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem; 
+}
+
+.hero-action .button {
+    inline-size: 100%;
+}
+
+.hero-description {
+    margin: auto; 
+}
+
+.hero-bold {
+    font: var(--mobile-body1semibold);
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-regular{
+    font: var(--mobile-body2regular);
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-icon {  
+    display: flex;
+    justify-content: center;
+}
+
+.hero-icon img {
+    vertical-align: middle;
+}
+
+.hero-update {
+    position: relative;
+}
+
+.hero-update-text {
+    font: var(--desktop-body2bold);
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    inset-block-start: 25%;
+    inline-size: 100%;
+}
+
+.hero-blur{
+    z-index: 0;
+    block-size: 11rem;
+    max-inline-size: 24.5rem; 
+    inline-size: 100%;
+    margin: auto; 
+    background:  radial-gradient(240.25% 104.59% at 50% 50%, rgba(75, 102, 216, 0.4) 0%, #0E0C20 80%),
+                       radial-gradient(240.25% 104.59% at 50% 50%, #503487 0%, #0E0C20 80%);
+    filter: blur(134px);
+}
+
+.hero-update .button {
+   position: absolute;
+   inset-block-start: 100%;
+   inline-size: 8.9375rem;
+   inset-inline-start: 50%;
+   transform: translateX(-50%) translateY(-100%);
+}
+
+@media screen and (min-width:768px) { 
+
+    .hero-action { 
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .hero-action .button {
+        inline-size: 10.375rem;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .hero {
+        margin-block-start: 5rem;
+    }
+
+    .hero-action { 
+        flex-direction: row;
+        justify-content: center;
+        padding-inline-start: 3rem;
+        padding-inline-end: 3rem;  
+    }
+
+    .hero-header{
+        padding-inline-start: 3rem;
+        padding-inline-end: 3rem; 
+    }
+
+    .hero-action .button {
+        inline-size: 10.375rem;
+    }
+
+    .hero-bold {
+        font: var(--desktop-body2bold); 
+        display: inline-block;
+    }
+    
+    .hero-regular{
+        font: var(--desktop-body2regular);
+        display: inline-block; 
+    }
+
+    .hero-icon {
+        display: inline-block;
+    }
+
+    .hero-update-text {
+        font: var(--desktop-body1semibold);
+        inline-size: 15.375rem;
+        text-align: center;
+    }
+
+    .hero-blur {
+        margin: unset;
+    }
+
+    .hero-update .button {
+        inset-block-start: 0;
+        transform: translateY(0);
+    }
+ 
+    
+}

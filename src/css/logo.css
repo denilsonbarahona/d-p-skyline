@@ -1,0 +1,13 @@
+.logo{
+    inline-size: 9.8125rem;
+    block-size: 2.5rem;
+    display: block;
+    outline-color: #635cff; 
+}
+
+.logo-img{
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+ 

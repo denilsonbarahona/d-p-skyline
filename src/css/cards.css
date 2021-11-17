@@ -1,0 +1,42 @@
+.card {
+    inline-size: 100%;
+    position: relative;  
+    display: inline-block;
+    cursor: pointer;
+    transition: filter ease-in-out .5s;
+    outline-color: #635cff; 
+}
+
+.card:is(.card--isOff) {
+    filter: brightness(.4);
+}
+
+.card:hover,
+.card:focus {
+    filter: brightness(1);
+}
+
+.card:hover 
+.card-title ,
+.card:focus
+.card-title {
+    opacity: 1;;
+}
+
+.card-title {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    inset-block-end: 10%;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    transition: opacity ease-in-out .5s;
+}
+
+.card-img {
+    vertical-align: middle;
+    object-fit: cover;
+    inline-size: 100%; 
+    block-size: 100%;
+}

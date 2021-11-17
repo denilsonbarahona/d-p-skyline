@@ -1,0 +1,25 @@
+.qa-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem; 
+}
+
+.qa-actions {
+    text-align: center;
+}
+
+.qa-actions > *{
+    margin: 0;
+}
+
+@media screen and (min-width:768px) {
+    .qa-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .qa-actions {
+        inline-size: 17.375rem;
+    }       
+}

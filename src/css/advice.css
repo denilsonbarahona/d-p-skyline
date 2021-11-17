@@ -1,0 +1,51 @@
+.advice {
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem; 
+    align-items: center; 
+}
+
+ .advice-bg {
+    margin: 0;
+    max-inline-size: 36.3125rem;
+    max-block-size: 49.875rem;
+ }
+
+ .advice-img{
+     vertical-align: middle;
+     inline-size: 100%;
+     block-size: 100%;
+ }
+
+ .advice-content p {
+     margin-block-end: 1.5rem;
+     text-justify: inter-word;
+ }
+
+ @media screen and (min-width:768px) {
+    .advice {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    } 
+
+    .advice-content p {
+        margin-block-end: 4rem;
+        font-size: 1.2rem;
+    }
+    
+    .advice-content span {
+        font-size: 1.2rem;
+    }
+   
+ }
+
+
+ @media screen and (min-width:1024px) {
+
+    .advice-content p,
+    .advice-content span {
+        font-size: 1.5rem;
+    }
+
+ }

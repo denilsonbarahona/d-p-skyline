@@ -1,0 +1,130 @@
+.menu-item, 
+.menu-item a{
+    outline-color: #635cff; 
+}
+
+
+.menu {
+   display: none;
+   background: #020202;
+   position: absolute;
+   inset-block-end: 0;
+   z-index: 2;
+   inset-inline-start: 0;
+   inset-inline-end: 0;
+   transform: translateY(101%);
+}
+
+.menu-list,
+.submenu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item  {
+  border-block-end: .5px solid #f6f9fc25;
+  position: relative;
+}
+
+.menu-item a,
+.submenu-item a{ 
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+    cursor: pointer;
+    color: var(--grey);
+    font: var(--desktop-body2regular);
+    display: inline-block;
+    box-sizing: border-box;
+    padding-inline-start: .5rem;
+    padding-inline-end: .5rem;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: var(--white);
+}
+
+.menu--elevation a:hover::after{ 
+    color: var(--white);
+}
+
+.menu--elevation a::after {
+    content: "AI";
+    color: var(--grey);
+    position: absolute;
+    font-size: .5rem;
+    inset-block-start: .25rem;
+    margin-inline-start: .25rem; 
+}
+
+/* .menu--submenu:active .submenu{
+    max-block-size: 20rem;
+}
+ */
+ 
+ 
+ .submenu { 
+    max-block-size: 0px; 
+    transition: max-block-size ease-in-out 1s;
+}
+    
+/* #submenu--active{
+    max-block-size: 20rem;
+    color:red;
+} */
+
+.submenu-item {
+    padding-inline-start: 2rem;
+    border-block-end: .5px solid #f6f9fc11;
+    position: relative; 
+}
+
+.submenu--isHidden {
+    display: none;
+}
+
+.submenu--isVisible {
+    display: block;
+}
+
+
+@media screen and (min-width:1024px) {
+    .menu {
+        background: none; 
+        position: relative; 
+        transform: unset;
+        display: inline-block;
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .submenu {
+        position: absolute; 
+        background: #020202;   
+        inset-inline-start: -5rem;
+        inline-size: 15rem;
+        max-block-size: 0px; 
+        transition: unset;
+    }
+
+/*     .menu--submenu:active .submenu{
+        max-block-size: 20rem;
+    } */
+
+    .menu-item a,
+    .submenu-item a {
+        color: var(--white);
+    }
+
+    .menu-item,
+    .submenu-item {
+        border: none;
+    }
+}
+

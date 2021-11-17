@@ -1,0 +1,69 @@
+.main-template .h2 {
+    text-align: center;
+}
+
+.template-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    grid-template-areas: "text" "template";
+}
+
+.template-col2{
+    grid-area: text;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: "text1 text2" "text3 text3" "button button";                     
+}
+
+.template-col1{
+    grid-area: template;
+}
+
+.template-col2 >* {
+    margin: 0;
+}
+
+.template-text1 { 
+    grid-area: text1;
+}
+
+.template-text2 { 
+    grid-area: text2;
+}
+
+.template-text3 { 
+    text-align: center;
+    grid-area: text3;
+}
+
+.template-col2 .button {
+    grid-area: button;
+}
+
+@media screen and (min-width:768px) {
+    .template-container { 
+        display: grid;
+        column-gap: 2.625rem;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: "template text";
+    }
+
+    .template-col2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+    }
+
+    .template-text1,
+    .template-text2,
+    .template-text3 { 
+        font: var(--desktop-body1semibold); 
+    }
+    
+    .template-text3 { 
+        text-align: left;
+    }
+    
+}
